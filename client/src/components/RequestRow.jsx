@@ -1,6 +1,4 @@
 const tdClass = "text-left p-2 border-b border-[#dce7f2]";
-const buttonClass =
-  "px-2 py-0.5 text-sm border border-[#dce7f2] rounded-lg cursor-pointer hover:bg-[#2e6fa3] hover:text-white";
 
 export default function RequestRow({ item, onEdit, onDelete }) {
   return (
@@ -15,14 +13,14 @@ export default function RequestRow({ item, onEdit, onDelete }) {
       <td className={tdClass}>
         <button
           type="button"
-          className={buttonClass}
+          className="px-2 py-0.5 text-sm border border-[#dce7f2] rounded-lg cursor-pointer hover:bg-[#2e6fa3] hover:text-white"
           onClick={() => onEdit(item)}
         >
           Edit
         </button>{" "}
         <button
           type="button"
-          className={buttonClass}
+          className="px-2 py-0.5 text-sm border border-[#dce7f2] rounded-lg cursor-pointer hover:bg-[#2e6fa3] hover:text-white"
           onClick={() => onDelete(item._id)}
         >
           Delete

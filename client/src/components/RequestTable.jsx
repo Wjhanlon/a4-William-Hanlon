@@ -1,6 +1,5 @@
 import RequestRow from "./RequestRow";
 
-const thClass = "text-left p-2 border-b border-[#dce7f2] bg-[#eaf2fa]";
 const headers = [
   "Equipment",
   "Requester",
@@ -20,7 +19,10 @@ export default function RequestTable({ items, onEdit, onDelete }) {
         <thead>
           <tr>
             {headers.map((header, i) => (
-              <th key={i} className={thClass}>
+              <th
+                key={i}
+                className="text-left p-2 border-b border-[#dce7f2] bg-[#eaf2fa]"
+              >
                 {header}
               </th>
             ))}

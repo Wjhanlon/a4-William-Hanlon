@@ -78,7 +78,7 @@ export default function RequestForm({ editing, onSubmit, onCancel }) {
           onChange={handleChange}
         />
 
-        <label htmlFor="urgent" className="inline-flex mt-3">
+        <label htmlFor="urgent" className="inline-flex mt-3 mr-2">
           Mark if Urgent:
         </label>
         <input

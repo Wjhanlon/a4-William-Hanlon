@@ -7,7 +7,7 @@ const escape = require("escape-html");
 const app = express();
 const port = 3000;
 const path = require("path");
-const dir = path.join(__dirname, "public");
+const dir = path.join(__dirname, "../client/dist");
 const client = new MongoClient(process.env.MONGODB_URI);
 let db, items;
 
@@ -41,7 +41,7 @@ app.use(
 
 app.use(express.json());
 app.get("/", requiresAuth(), (request, response) => {
-  response.sendFile(path.join(__dirname, "public", "index.html"));
+  response.sendFile(path.join(dir, "index.html"));
 });
 app.use(express.static(dir));
 

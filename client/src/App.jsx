@@ -42,8 +42,9 @@ export default function App() {
         <a
           href="/logout"
           className="inline-block no-underline hover:underline hover:decoration-[#1e2a36] py-2 px-4 text-[#1e2a36] [font-family:inherit] text-base cursor-pointer"
-        />
-        Log Out
+        >
+          Log Out
+        </a>
       </div>
       <main className="flex gap-6 pt-20 pr-8 pb-8 pl-8">
         <RequestForm
